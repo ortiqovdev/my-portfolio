@@ -380,3 +380,19 @@ animation-delay: 1s;
     transform: translateY(0px);
   }
 }
+
+/* scroll animation */
+.headerNav{
+  top: 0;
+  transition: background-color 0.4s ease-in-out;
+}
+.scrolled{
+  backdrop-filter: blur(15px);
+  box-shadow: 1px 12px 12px -8px rgba(20, 20, 20, 0.865);
+  border-bottom: 1px solid #0ba4e0;
+  /* background-color: #23262d; */
+  opacity: 0.98;
+}
+.scrolled a{
+  color: r ed;
+}
