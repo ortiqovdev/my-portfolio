@@ -10,18 +10,25 @@ app.use("/", express.static("public"))
 
 app.set('view engine', '.hbs');
 app.set("views", "./views");
-app.engine('hbs', hbs.engine({ extname: 'hbs'}))
+app.engine('hbs', hbs.engine({ extname: 'hbs' }))
 
 
 app.use('/', require('./src/routes/routes'));
 
-// 404 not found
-app.use((req, res, next) => {
-   const locals = {
-      title:"Page Not Found"
+// begona sorov yuborishni cheklash
+app.get('*', (req, res) => {
+   res.redirect('/');
+});
+
+app.get('/', (req, res, next) => {
+   const { originalUrl } = req;
+
+   if (originalUrl === '/' || originalUrl === '/admin' || originalUrl === '/blog' || originalUrl === '/login') {
+      next();
+   } else {
+      res.redirect('/');
    }
-   res.status(404).render("error/errMassage", locals)
-})
+});
 
 const PORT = process.env.PORT || 5100
 app.listen(PORT, () => {

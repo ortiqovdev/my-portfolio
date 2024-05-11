@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body {
   background: #17191e;
   color: #898989;
   cursor: none;
 }
-::selection{
-  background: #0BA4E0;
+::selection {
+  background: #0ba4e0;
   color: rgb(50, 50, 50);
 }
 .bg-color {
@@ -55,7 +56,7 @@ body {
   width: 8px;
   height: 8px;
   z-index: 100;
-  background-color: #0BA4E0;
+  background-color: #0ba4e0;
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
@@ -66,7 +67,7 @@ body {
   margin-top: -40px;
   width: 80px;
   height: 80px;
-  background-color: #0BA4E0;
+  background-color: #0ba4e0;
   opacity: 0.3;
 }
 .cursor-outer {
@@ -74,7 +75,7 @@ body {
   margin-top: -20px;
   width: 40px;
   height: 40px;
-  border: 2px solid #0BA4E0;
+  border: 2px solid #0ba4e0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 100;
@@ -109,18 +110,18 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   display: inline-block;
 }
 
-.links{
-  margin: 0 10px 0 10px ;
+.links {
+  margin: 0 10px 0 10px;
 }
-.links:hover{
+.links:hover {
   text-decoration: underline;
-  color: #0BA4E0;
-  transition: all .5s ease-in-out;
+  color: #0ba4e0;
+  transition: all 0.5s ease-in-out;
 }
-.linksBtn:hover{
-  border-color: #0BA4E0;
-  color: #0BA4E0;
-  transition: all .5s ease-in-out;
+.linksBtn:hover {
+  border-color: #0ba4e0;
+  color: #0ba4e0;
+  transition: all 0.5s ease-in-out;
 }
 /* Profile img */
 .wrapper {
@@ -140,24 +141,20 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   animation: animate 5s ease-in-out infinite;
   transform: all 1s ease-in-out;
 }
-@keyframes animate{
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 
-        70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 
-        30% 60%;
-    }
-    100%{
-        border-radius: 60% 40% 30% 70%/60% 30% 
-        70% 40%;
-    }
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 /* typing animation */
-.text-div{
-
+.text-div {
   height: 50vh;
   display: flex;
   align-items: center;
@@ -165,62 +162,221 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   font-family: "Montserrat", sans-serif;
 }
 
-.text{
+.text {
   font-size: 34px;
   font-weight: 600;
   min-width: 280px;
 }
 
-.text span{
+.text span {
   position: relative;
 }
 
-.text span::before{
+.text span::before {
   content: "Akmal";
-  color: #0BA4E0;
+  color: #0ba4e0;
   animation: words 20s infinite;
 }
 
-.text span::after{
+.text span::after {
   content: "";
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
   background-color: #17191e;
-  border-left: 2px solid #0BA4E0;
+  border-left: 2px solid #0ba4e0;
   right: -8px;
-  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
-  to{
-      border-left: 2px solid #ff7f5000;
+  to {
+    border-left: 2px solid #ff7f5000;
   }
 }
 
 @keyframes words {
-  0%,20%{
-      content: "Akmal";
+  0%,
+  20% {
+    content: "Akmal";
   }
-  21%,40%{
-      content: "Coder";
+  21%,
+  40% {
+    content: "Coder";
   }
-  41%,60%{
-      content: "Student";
+  41%,
+  60% {
+    content: "Student";
   }
-  61%,80%{
-      content: "Freelancer";
+  61%,
+  80% {
+    content: "Freelancer";
   }
-  81%,100%{
-      content: "Soon Middle";
+  81%,
+  100% {
+    content: "Soon Middle";
   }
 }
 
 @keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-      width: 0;
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
   }
-  5%,20%,25%,40%,45%,60%,65%,80%,85%{
-      width: calc(100% + 8px);
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+/* index buttons */
+.cvBtn {
+  padding: 10px;
+  border-radius: 6px;
+  color: #0ba4e0;
+  border: 2px solid #0ba4e0;
+}
+.readBtn {
+  padding: 10px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: 2px solid #0ba4e0;
+  background-color: #0ba4e0;
+}
+
+/* index icons */
+.indexIcon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.indexIcon:hover {
+  color: #0ba4e0;
+  transition: 0.3s ease-in-out;
+}
+
+/* modal page*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.modal-content {
+  background-color: #17191e;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+}
+.inputBg {
+  background-color: #23262d;
+}
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #0ba4e0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.borderBottom {
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  background-color: #898989;
+}
+.textColor {
+  color: #0ba4e0;
+}
+.btnColor {
+  background-color: #0ba4e0;
+}
+
+/* index amination */
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.indexTitle{
+animation-delay: .5s;
+}
+.indexBtns{
+animation-delay: 1s;
+}
+.indexLinks{
+animation-delay: 1.5s;
+}
+
+.animImg {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: moveupImg 0.5s linear forwards;
+}
+
+@keyframes moveupImg {
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.aminFooter {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveupFoo 0.5s linear forwards;
+}
+
+@keyframes moveupFoo {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.animNav {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: moveupNav 0.5s linear forwards;
+}
+
+@keyframes moveupNav {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
