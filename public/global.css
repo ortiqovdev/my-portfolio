@@ -120,7 +120,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 }
 .linksBtn:hover {
   border-color: #0ba4e0;
-  color: #0ba4e0;
+  color: rgb(11, 164, 224);
   transition: all 0.5s ease-in-out;
 }
 /* Profile img */
@@ -137,7 +137,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   background-position: center center;
   height: 400px;
   width: 400px;
-  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 5px 5px rgba(70, 202, 255, 0.2);
   animation: animate 5s ease-in-out infinite;
   transform: all 1s ease-in-out;
 }
@@ -335,13 +335,13 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   }
 }
 .indexTitle{
-animation-delay: .5s;
+animation-delay: .3s;
 }
 .indexBtns{
-animation-delay: 1s;
+animation-delay: .7s;
 }
 .indexLinks{
-animation-delay: 1.5s;
+animation-delay: 1s;
 }
 
 .animImg {
