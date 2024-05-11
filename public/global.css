@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  background: #17191e;
+  color: #898989;
+  cursor: none;
+}
+::selection{
+  background: #0BA4E0;
+  color: rgb(50, 50, 50);
+}
+.bg-color {
+  background: #23262d;
+}
+.maxWidth {
+  max-width: 1600px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #898989;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #696969;
+}
+
+/* cursor  */
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+}
+.cursor-inner {
+  margin-left: -4px;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  z-index: 100;
+  background-color: #0BA4E0;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #0BA4E0;
+  opacity: 0.3;
+}
+.cursor-outer {
+  margin-left: -20px;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0BA4E0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+  opacity: 0.5;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+.cursor-outer.cursor-hover {
+  opacity: 0;
+}
+body[data-magic-cursor="hide"] .mouse-cursor {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1111;
+}
+
+/*Footer start*/
+.codepen_profile {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.codepen_profile a {
+  background: rgba(54, 54, 54, 0.53);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: hsl(0deg 0% 80%) 0 5px 16px;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+
+.links{
+  margin: 0 10px 0 10px ;
+}
+.links:hover{
+  text-decoration: underline;
+  color: #0BA4E0;
+  transition: all .5s ease-in-out;
+}
+.linksBtn:hover{
+  border-color: #0BA4E0;
+  color: #0BA4E0;
+  transition: all .5s ease-in-out;
+}
+/* Profile img */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.box {
+  background: url("./img/profile.jpg");
+  -webkit-backdrop-siz: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  width: 400px;
+  box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transform: all 1s ease-in-out;
+}
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 
+        70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 
+        30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 
+        70% 40%;
+    }
+}
+
+/* typing animation */
+.text-div{
+
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.text span{
+  position: relative;
+}
+
+.text span::before{
+  content: "Akmal";
+  color: #0BA4E0;
+  animation: words 20s infinite;
+}
+
+.text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #17191e;
+  border-left: 2px solid #0BA4E0;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "Akmal";
+  }
+  21%,40%{
+      content: "Coder";
+  }
+  41%,60%{
+      content: "Student";
+  }
+  61%,80%{
+      content: "Freelancer";
+  }
+  81%,100%{
+      content: "Soon Middle";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
