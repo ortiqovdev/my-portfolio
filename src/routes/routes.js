@@ -4,10 +4,9 @@ const controllers = require('../controllers/controllers');
 const adminControllers = require('../controllers/adminControllers');
 
 router.get('/', controllers.getIndex)
-router.get('/admin', adminControllers.getAdmin)
-router.get('/login', controllers.getLogin)
 router.get('/blogs', controllers.getBlogs)
 router.get('/projects', controllers.getProjects)
+router.get('/admin', adminControllers.getAdmin)
 
 
 module.exports = router;
