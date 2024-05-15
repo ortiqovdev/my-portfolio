@@ -16,3 +16,4 @@ hiddenElems.forEach((el) => observer.observe(el));
 hiddenLeftElems.forEach((el) => observer.observe(el));
 hiddenTopElems.forEach((el) => observer.observe(el));
 hiddenBottomElems.forEach((el) => observer.observe(el));
+// skills page anim
