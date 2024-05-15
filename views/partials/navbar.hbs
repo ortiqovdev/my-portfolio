@@ -7,11 +7,13 @@
             </div>
             <div class="flex">
                 <div class="flex text-lg items-center mx-8">
-                    <a href="/projects" class="links ">Projects</a>
-                    <a href="#" class="links ">Educations</a>
-                    <a href="#" class="links ">Skills</a>
-                    <a href="/blogs" class="links">Blogs</a>
+                    <a href="/projects" class="links {{#if onProject}} text-[#0ba4e0] {{/if}}">Projects</a>
+                    <a href="/edu" class="links {{#if onEdu}} text-[#0ba4e0] {{/if}}">Educations</a>
+                    <a href="/skills" class="links {{#if onSkills}} text-[#0ba4e0] {{/if}}">Skills</a>
+                    <a href="/blogs" class="links {{#if onBlogs}} text-[#0ba4e0] {{/if}}">Blogs</a>
                 </div>
+
+                
                 <a><label class="switch">
                         <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <g fill="#ffd43b">

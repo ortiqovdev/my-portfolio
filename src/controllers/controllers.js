@@ -4,21 +4,31 @@ exports.getIndex = async (req, res, next) => {
     }
     res.render('partials/index', locals);
 }
-exports.getLogin = async (req, res, next) => {
+exports.getProjects = async (req, res, next) => {
     const locals = {
-        title: "Login page",
+        title: "Ortiqov | Projects",
+        onProject: true
     }
-    res.render('partials/login', locals);
+    res.render('pages/projects', locals);
+}
+exports.getEdu = async (req, res, next) => {
+    const locals = {
+        title: "Ortiqov | Educations",
+        onEdu: true
+    }
+    res.render('pages/edu', locals);
+}
+exports.getSkills = async (req, res, next) => {
+    const locals = {
+        title: "Ortiqov | Skills",
+        onSkills: true
+    }
+    res.render('pages/skills', locals);
 }
 exports.getBlogs = async (req, res, next) => {
     const locals = {
-        title: "All blogs",
+        title: "Ortiqov | blogs",
+        onBlogs: true
     }
-    res.render('partials/blogs', locals);
-}
-exports.getProjects = async (req, res, next) => {
-    const locals = {
-        title: "Projects",
-    }
-    res.render('partials/projects', locals);
+    res.render('pages/blogs', locals);
 }
