@@ -1,6 +1,7 @@
 exports.getIndex = async (req, res, next) => {
     const locals = {
         title: "Ortiqov Portfolio",
+        onHome:true
     }
     res.render('partials/index', locals);
 }
@@ -17,6 +18,13 @@ exports.getEdu = async (req, res, next) => {
         onEdu: true
     }
     res.render('pages/edu', locals);
+}
+exports.getEmp = async (req, res, next) => {
+    const locals = {
+        title: "Ortiqov | Employment",
+        onEmp: true
+    }
+    res.render('pages/employment', locals);
 }
 exports.getSkills = async (req, res, next) => {
     const locals = {
