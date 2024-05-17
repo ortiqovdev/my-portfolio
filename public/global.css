@@ -25,7 +25,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   cursor: none;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 ::selection {
   background: var(--logo-color);
@@ -206,7 +206,6 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   content: "Akmal";
   color: var(--logo-color);
   animation: words 20s infinite;
-
 }
 
 .text span::after {
@@ -216,7 +215,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   height: 100%;
   background-color: var(--bg-color);
   border-left: 2px solid var(--logo-color);
-  transition: all .5s linear;
+  transition: all 0.5s linear;
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
@@ -330,7 +329,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   padding: 20px;
   width: 60%;
 }
-.modal-items{
+.modal-items {
   display: flex;
   justify-content: space-between;
 }
@@ -445,7 +444,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 }
 .navIconsMedia {
   background-color: var(--second-bg);
-  transition: all .5s linear;
+  transition: all 0.5s linear;
   border-radius: 20px 20px 0 0;
   padding: 20px;
   display: flex;
@@ -460,11 +459,20 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   opacity: 0.98;
 }
 /* Project page */
+.project {
+  padding-top: 8rem;
+  overflow-x: hidden;
+}
+.project-all {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .textProject {
   font-size: 70px;
   margin: 10px auto 60px auto;
   color: var(--logo-color);
-  line-height: 1.5;
 }
 .project-text2 {
   color: var(--project-color);
@@ -477,7 +485,12 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   background-color: var(--second-bg);
   padding: 10px;
 }
-
+.projectSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+}
 .projectImg {
   width: 350px;
   transform: translateY(-30px);
@@ -542,7 +555,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   color: var(--logo-color);
 }
 
-.projectBackImg {
+.proskillsjectBackImg {
   width: 600px;
   height: 300px;
   background: url("/img/kitobek.jpg");
@@ -558,11 +571,20 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 }
 
 /* Skills page */
+.skills {
+  padding-top: 128px;
+  overflow: hidden;
+}
 .lineY-skills {
   width: 50px;
   height: 1.5px;
   background-color: #898989;
   margin-right: 10px;
+}
+.skillsItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .textProjectSkills {
   font-size: 40px;
@@ -570,13 +592,17 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   color: var(--logo-color);
   line-height: 1.5;
 }
+.langSkills {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
 .skillsBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 120px;
-  margin: 5px 20px 5px 0;
-  padding: 10px;
+  padding: 5px;
+  margin: 5px 20px 5px 0px;
   border-radius: 10px;
 }
 .skillsBox:hover {
@@ -592,6 +618,8 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 }
 .skills-textName {
   color: var(--project-color);
+  font-size: 25px;
+  margin-left: 8px;
 }
 /* blogs page */
 .lineY-blogs {
@@ -700,12 +728,12 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     margin-top: 50px;
     height: 40vh;
   }
-  .text-div{
-   padding-top: 0px;
-   margin: 0;
-   justify-content: center;
+  .text-div {
+    padding-top: 0px;
+    margin: 0;
+    justify-content: center;
   }
-  .modal{
+  .modal {
     padding: 10px;
     overflow-x: hidden;
   }
@@ -713,9 +741,49 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     padding: 10px;
     width: 90%;
   }
-  .modal-items{
+  .modal-items {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+  }
+  /* project page */
+  .project {
+    padding: 0;
+    padding-top: 6rem;
+    overflow-x: hidden;
+  }
+  .project-all {
+    padding: 20px;
+  }
+  .textProject {
+    font-size: 30px;
+    margin: 10px auto 60px auto;
+    color: var(--logo-color);
+  }
+  .projectSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    align-items: center;
+  }
+  .skills {
+    padding: 0px;
+    padding-top: 6rem;
+  }
+  .skills-all {
+    padding: 20px;
+  }
+  .langSkills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .skillsBox {
+    margin-bottom: 10px;
+  }
+  .skills-textName {
+    font-size: 25px;
+  }
+  .skillsItems {
+    padding-bottom: 5rem;
   }
 }
