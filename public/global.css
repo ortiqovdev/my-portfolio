@@ -556,7 +556,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   color: var(--logo-color);
 }
 
-.proskillsjectBackImg {
+.projectBackImg {
   width: 600px;
   height: 300px;
   background: url("/img/kitobek.jpg");
@@ -651,10 +651,10 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.blogTitle{
+.blogTitle {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem
+  font-size: 1rem;
 }
 .blogImg {
   width: 35rem;
@@ -670,6 +670,52 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 }
 .blogTextName {
   color: var(--project-color);
+}
+/* eduacation section */
+.eduBody {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.eduHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.eduItems{
+  display: flex;
+  margin-bottom: 40px;
+}
+.eduLineY {
+  width: 2px;
+  height: 100% ;
+  border-right: 2px dashed var(--logo-color);
+}
+.eduLeft {
+  border: 1px solid var(--logo-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding-left: 6px;
+  font-size: 25px;
+  color: var(--project-color);
+}
+.eduTitles{
+  margin-left: 20px;
+}
+.eduText{
+ font-size: 30px;
+ color: var(--project-color);
+ padding: 0;margin: 0;
+}
+.eduDate{
+  font-size: 14px;
+  color: var(--logo-color);
+  margin-bottom: 10px;
+}
+.eduTextSec{
+color: var(--project-color);
+font-size: 16px;
 }
 /* theme  */
 #icon {
@@ -825,7 +871,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     filter: none;
     box-shadow: 0px 10px 16px -3px rgba(0, 0, 0, 0.6);
   }
-  .blogFooter{
+  .blogFooter {
     display: block;
     justify-content: none;
   }
@@ -833,9 +879,9 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     display: none;
     justify-content: none;
   }
-  .blogTitle{
+  .blogTitle {
     display: flex;
     justify-content: space-between;
-    font-size: 1rem
+    font-size: 1rem;
   }
 }
