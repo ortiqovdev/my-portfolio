@@ -1,26 +1,28 @@
-<div class=" fixed w-full headerNav py-5 z-10">
-    <div class="maxWidth mx-auto px-32  ">
+<div class=" headerNav">
+    <div class="maxWidth">
         <div class="flex justify-between items-center ">
             <div class="flex items-center">
                 <a href="/"> <img src="/icon/logo.png" alt="logo" class="w-14 flex"></a>
-
             </div>
-            <div class="flex">
-                <div class="flex text-lg items-center mx-8">
-                {{#if onHome}}
-                    <a href="/projects" class="links {{#if onProject}} text-[#0ba4e0] {{/if}}">Projects</a>
-                    <a href="/employment" class="links {{#if onEmp}} text-[#0ba4e0] {{/if}}">Employment</a>
-                    <a href="/edu" class="links {{#if onEdu}} text-[#0ba4e0] {{/if}}">Educations</a>
-                    <a href="/skills" class="links {{#if onSkills}} text-[#0ba4e0] {{/if}}">Skills</a>
-                    <a href="/blogs" class="links {{#if onBlogs}} text-[#0ba4e0] {{/if}}">Blogs</a>
-                {{else}}
-                    <a href="/" class="links">Home</a>
-                    <a href="/projects" class="links {{#if onProject}} text-[#0ba4e0] {{/if}}">Projects</a>
-                    <a href="/employment" class="links {{#if onEmp}} text-[#0ba4e0] {{/if}}">Employment</a>
-                    <a href="/edu" class="links {{#if onEdu}} text-[#0ba4e0] {{/if}}">Educations</a>
-                    <a href="/skills" class="links {{#if onSkills}} text-[#0ba4e0] {{/if}}">Skills</a>
-                    <a href="/blogs" class="links {{#if onBlogs}} text-[#0ba4e0] {{/if}}">Blogs</a>
-               {{/if}}
+
+            <div class="flex items-center">
+                <div class="navPages">
+                    <div class="flex text-lg items-center mx-8">
+                        {{#if onHome}}
+                        <a href="/projects" class="links {{#if onProject}} text-[#0ba4e0] {{/if}}">Projects</a>
+                        <a href="/employment" class="links {{#if onEmp}} text-[#0ba4e0] {{/if}}">Employment</a>
+                        <a href="/edu" class="links {{#if onEdu}} text-[#0ba4e0] {{/if}}">Educations</a>
+                        <a href="/skills" class="links {{#if onSkills}} text-[#0ba4e0] {{/if}}">Skills</a>
+                        <a href="/blogs" class="links {{#if onBlogs}} text-[#0ba4e0] {{/if}}">Blogs</a>
+                        {{else}}
+                        <a href="/" class="links">Home</a>
+                        <a href="/projects" class="links {{#if onProject}} text-[#0ba4e0] {{/if}}">Projects</a>
+                        <a href="/employment" class="links {{#if onEmp}} text-[#0ba4e0] {{/if}}">Employment</a>
+                        <a href="/edu" class="links {{#if onEdu}} text-[#0ba4e0] {{/if}}">Educations</a>
+                        <a href="/skills" class="links {{#if onSkills}} text-[#0ba4e0] {{/if}}">Skills</a>
+                        <a href="/blogs" class="links {{#if onBlogs}} text-[#0ba4e0] {{/if}}">Blogs</a>
+                        {{/if}}
+                    </div>
                 </div>
                 <a>
                     <div class="m-2 text-xl p-1 moon">
