@@ -434,6 +434,9 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 .navPages {
   display: flex;
 }
+.deviceNav{
+  display: none;
+}
 .navMedia {
   display: none;
   position: fixed;
@@ -909,6 +912,9 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   .navPages {
     display: none;
   }
+  .deviceNav{
+    display: none;
+  }
   .navMedia {
     display: block;
   }
@@ -1065,12 +1071,3 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     padding: 20px;
   }
 }
-/* @media (min-width: 768px) and (max-width: 1024px) {
-  .maxWidth {
-    max-width: 1300px;
-    padding: 0 50px;
-  }
-  .navPages {
-    display: none;
-  }
-} */
