@@ -562,10 +562,59 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   background: url("/img/kitobek.jpg");
   background-size: cover;
   border-radius: 10px;
+  border: 1px solid var(--text-color);
+
+}
+.projectBackImg1 {
+  width: 600px;
+  height: 300px;
+  background: url("/img/chat.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+
+}
+.projectBackImg2 {
+  width: 600px;
+  height: 300px;
+  background: url("/img/joy.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+
+}
+.projectBackImg3 {
+  width: 600px;
+  height: 300px;
+  background: url("/img/mind.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+
+}
+.projectBackImg4 {
+  width: 600px;
+  height: 300px;
+  background: url("/img/ortiqov.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
 }
 
 .projectBackImg:hover {
   background-image: url("/gif/kitobek.gif");
+}
+.projectBackImg1:hover {
+  background-image: url("/gif/family-chat.gif");
+}
+.projectBackImg2:hover {
+  background-image: url("/gif/joy.gif");
+}
+.projectBackImg3:hover {
+  background-image: url("/gif/mind.gif");
+}
+.projectBackImg4:hover {
+  background-image: url("/gif/ortiqov.gif");
 }
 .textBgCreate {
   border: 1px solid var(--logo-color);

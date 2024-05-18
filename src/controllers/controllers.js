@@ -35,7 +35,7 @@ exports.getSkills = async (req, res, next) => {
 }
 exports.getBlogs = async (req, res, next) => {
     const locals = {
-        title: "Ortiqov | blogs",
+        title: "Ortiqov | Blogs",
         onBlogs: true
     }
     res.render('pages/blogs', locals);
