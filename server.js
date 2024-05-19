@@ -1,6 +1,7 @@
+require('dotenv').config()
 const express = require('express');
 const hbs = require('express-handlebars');
-
+const mongoose = require('mongoose')
 
 const app = express()
 
@@ -30,7 +31,19 @@ app.get('/', (req, res, next) => {
    }
 });
 
+const DB_URL = process.env.MONGO_URL
 const PORT = process.env.PORT || 5100
-app.listen(PORT, () => {
-   console.log(`Server is running on port: http://localhost:${PORT}`)
-})
+
+const startApp = async () => {
+   try {
+      await mongoose.connect(DB_URL).then(() => {
+         console.log('Connected mongoDB')
+      })
+      app.listen(PORT, () => {
+         console.log(`Server is running on port: http://localhost:${PORT}`)
+      })
+   } catch (error) {
+      console.log(`Database error:  ${error}`)
+   }
+}
+startApp()
