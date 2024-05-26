@@ -1089,4 +1089,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   .empAll {
     padding: 20px;
   }
+  .adminImg{
+    display: none;
+  }
 }

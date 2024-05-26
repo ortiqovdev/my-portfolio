@@ -9,7 +9,8 @@ router.get('/edu', controllers.getEdu)
 router.get('/employment', controllers.getEmp)
 router.get('/skills', controllers.getSkills)
 router.get('/blogs', controllers.getBlogs)
-router.get('/admin', adminControllers.getAdmin)
+router.get('/admin', adminControllers.getAdminLogin)
+router.get('/adminIndex', adminControllers.getAdmin)
 
 
 module.exports = router;

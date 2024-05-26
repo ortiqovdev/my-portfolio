@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
 app.get('/', (req, res, next) => {
    const { originalUrl } = req;
 
-   if (originalUrl === '/' || originalUrl === '/admin' || originalUrl === '/blog' || originalUrl === '/login') {
+   if (originalUrl === '/' || originalUrl === '/admin' || originalUrl === '/blog' || originalUrl === '/login' || originalUrl === '/adminIndex') {
       next();
    } else {
       res.redirect('/');
