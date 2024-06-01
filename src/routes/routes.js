@@ -11,6 +11,7 @@ router.get('/skills', controllers.getSkills)
 router.get('/blogs', controllers.getBlogs)
 router.get('/admin', adminControllers.getAdminLogin)
 router.get('/adminIndex', adminControllers.getAdmin)
+// router.post('/adminIndex', adminControllers.postAdmin)
 
 
 module.exports = router;
