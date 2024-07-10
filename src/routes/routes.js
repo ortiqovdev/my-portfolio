@@ -9,8 +9,8 @@ router.get('/edu', controllers.getEdu)
 router.get('/employment', controllers.getEmp)
 router.get('/skills', controllers.getSkills)
 router.get('/blogs', controllers.getBlogs)
-router.get('/admin', adminControllers.getAdminLogin)
-router.get('/adminIndex', adminControllers.getAdmin)
+router.get('/admin-login', adminControllers.getAdminLogin)
+router.get('/admin-dashboard', adminControllers.getAdmin)
 // router.post('/adminIndex', adminControllers.postAdmin)
 
 
