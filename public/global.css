@@ -161,7 +161,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   margin-top: 36px;
 }
 .box {
-  background: url("./img/profile.jpg");
+  background: url("./img/profile1.jpg");
   background-size: cover;
   background-position: center center;
   height: 400px;
@@ -916,6 +916,19 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     transform: rotate(0deg);
   }
 }
+
+/* admin style */
+.adminBlog {
+
+}
+.admin-title {
+}
+.adminTitle {
+}
+.adminDesc {
+}
+.adminImg {
+}
 /* Media queres */
 
 /* Tablet sceen*/
@@ -1089,7 +1102,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   .empAll {
     padding: 20px;
   }
-  .adminImg{
+  .adminImg {
     display: none;
   }
 }
