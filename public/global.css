@@ -919,15 +919,24 @@ body[data-magic-cursor="hide"] .mouse-cursor {
 
 /* admin style */
 .adminBlog {
-
+  margin: 0;
+  padding: 0;
 }
 .admin-title {
+  margin: 0;
+  padding: 0;
 }
 .adminTitle {
+  margin: 0;
+  padding: 0;
 }
 .adminDesc {
+  margin: 0;
+  padding: 0;
 }
 .adminImg {
+  margin: 0;
+  padding: 0;
 }
 /* Media queres */
 
