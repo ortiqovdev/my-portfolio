@@ -4,12 +4,12 @@ exports.getAdminLogin = async (req, res, next) => {
   }
   res.render('admin/adminLogin', locals);
 }
-exports.getAdmin = async (req, res, next) => {
-  const locals = {
-    title: "Admin page",
-  }
-  res.render('admin/adminIndex', locals);
-}
+// exports.getAdmin = async (req, res, next) => {
+//   const locals = {
+//     title: "Admin page",
+//   }
+//   res.render('admin/adminIndex', locals);
+// }
 // exports.postAdmin = async (req, res, next) => {
 //   const locals = {
 //     title: "Admin page",
