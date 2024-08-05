@@ -498,9 +498,6 @@ body[data-magic-cursor="hide"] .mouse-cursor {
   color: var(--logo-color);
   transition: 0.3s ease-in-out;
 }
-.projectErr {
-  display: none;
-}
 .projectSection {
   width: 100%;
   display: grid;
@@ -1016,16 +1013,7 @@ body[data-magic-cursor="hide"] .mouse-cursor {
     width: 100%;
     margin-bottom: 100px;
   }
-  .projectErr {
-    display: block;
-    background-color: rgb(197, 23, 23);
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 140px;
-  }
+
   .textProject {
     font-size: 30px;
     margin: 10px auto 60px auto;
